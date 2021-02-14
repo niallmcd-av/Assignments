@@ -6,8 +6,9 @@ print("-------------------------------------------")
 print("Body Mass Index Calculator")
 print("-------------------------------------------")
 
-weight = float(input("Please Enter your Weight "))
-height = float(input("Please Enter your Height "))
+weight = float(input("Please Enter your Weight kg: "))
+height = float(input("Please Enter your Height in cm: "))
+height = height/100
 BMI = weight / (height*height)
 
 print(round (BMI,2))
